@@ -65,6 +65,5 @@ ActiveRecord::Schema.define(version: 2018_09_02_064123) do
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
-  add_foreign_key "readings", "cards"
   add_foreign_key "readings", "users"
 end
