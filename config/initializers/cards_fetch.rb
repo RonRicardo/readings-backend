@@ -5,7 +5,7 @@ require 'rest-client'
   data.each do |card|
         fetched_card = Card.new do |c|
           c.name = card['name']
-          c.front_image = card['front_image']
+          c.front_image = card['face_image_url']
           c.short_meaning = card['short_meaning']
           c.full_meaning = card['full_meaning']
           c.up = card['up']
